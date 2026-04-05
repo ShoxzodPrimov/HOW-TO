@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>tabs</title>
+  </head>
+  <body>
+    <div id ="bar" class="border-solid border-[#ccc] border-[1px] w-[400px] m-auto">
+        <ul class = "flex bg-[#f1f1f1]" id="selectModal">
+            <li class="p-[10px] bg-[#f1f1f1] cursor-pointer hover:bg-[#ddd]">London</li>
+            <li class="p-[10px] bg-[#f1f1f1] cursor-pointer hover:bg-[#ddd]">Paris</li>
+            <li class="p-[10px] bg-[#f1f1f1] cursor-pointer hover:bg-[#ddd]">Tokyo</li>
+        </ul>
+        <div class="showContent">
+            <h1 class="font-extrabold"></h1>
+            <p></p>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

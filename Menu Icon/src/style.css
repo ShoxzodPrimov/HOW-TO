@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.bar1 , .bar2 , .bar3 {
+    transition: 0.4s;
+}
