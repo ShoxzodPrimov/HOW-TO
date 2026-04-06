@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Topnav</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex items-center bg-[#333] text-white max-md:flex-col">
+              <div id="background" class="flex items-center max-md:justify-between max-md:w-[100%]">
+                <li class="bg-[#04AA6D] p-[10px] cursor-pointer">Home</li>  
+
+                   <!-- menu button -->
+                <div id="menu-btn"  class="hover:bg-[#ddd] p-[14px] cursor-pointer hidden max-md:block">
+                    <div class="flex flex-col justify-between w-[20px] h-[16px]">
+                    <div class="bg-white h-[2px]"></div>
+                    <div class="bg-white h-[2px]"></div>
+                    <div class="bg-white h-[2px]"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="listItems" class="flex w-[100%] max-md:flex-col max-md:hidden">
+                <li class="cursor-pointer p-[10px] hover:bg-[#ddd] hover:text-black">News</li>
+                <li class="cursor-pointer p-[10px] hover:bg-[#ddd] hover:text-black">Contact</li>
+                <li class="cursor-pointer p-[10px] hover:bg-[#ddd] hover:text-black">About</li>
+              </div>
+            </ul>
+        </nav>
+        <div class="p-[10px]">
+            <h1 class="font-bold text-2xl">Responsive Topnav Example</h1>
+            <p class="mt-[10px]">Resize the browser window to see how it works.</p>
+        </div>
+    </header>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const listItems = document.getElementById("listItems");
+        const bg = document.getElementById("background");
+
+        menuBtn.addEventListener("click" , () => {
+            listItems.classList.toggle("max-md:hidden")
+            bg.classList.toggle("max-md:bg-[#04AA6D]")
+        })
+    </script>
+</body>
+</html>
