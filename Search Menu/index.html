@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <section class="flex">
+        <nav class="bg-[#bbb]">
+            <h1 class="pt-[30px] px-[10px] pb-[10px] text-[1.5rem] font-medium">Menu</h1>
+            <input class="bg-white px-[10px] py-[5px] outline-none" type="text" name="" id="search" placeholder="Search...">
+            <ul class="flex flex-col gap-2">
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">HTML</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">CSS</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">JavaScript</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">PHP</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">Python</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">jQuery</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">SQL</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">Bootstrapt</li>
+                <li class="px-[10px] py-[5px] cursor-pointer hover:bg-[#eee]">Node js</li>
+            </ul>
+        </nav>
+
+        <div class="bg-[#ddd]">
+            <h1 class="pt-[32px] px-[10px] pb-[3px] text-[1.5rem] font-medium">
+                Page Content
+            </h1>
+
+        <div class="px-[10px] mt-0 flex flex-col gap-5">
+            <p>Start to type for a specific category/link inside the search bar to "filter" the search options.</p>
+
+             <p>   Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text.. </p>
+
+             <p>   Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text.. </p>
+
+             <p>   Some text.. </p>
+        </div>
+        </div>
+    </section>
+
+
+    <script>
+        const search = document.getElementById("search");
+        const listItems = document.querySelectorAll("li");
+
+        search.oninput = function() {
+
+        listItems.forEach(
+            items => {
+                if ( search.value === "" ) {
+                    items.style.display = "block";
+                    return
+                } else if ( items.textContent.trim().toLowerCase().includes( search.value.toLowerCase() ) ) {
+                    items.style.display = "block";
+                    return
+                }
+
+                items.style.display = "none";
+        });
+
+        }
+    </script>
+</body>
+</html>
