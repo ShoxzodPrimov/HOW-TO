@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidenav</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="h-[100vh] flex max-[700px]:h-0 max-[700px]:flex-col">
+        <nav class="bg-[#f1f1f1] w-40 max-[700px]:w-[100vw] max-[400px]:">
+            <ul class="flex flex-col max-[700px]:flex-row max-[400px]:flex-col">
+                <li class="p-[10px] text-white cursor-pointer bg-[#04AA6D]">Home</li>
+                <li class="p-[10px] cursor-pointer hover:bg-[#555] hover:text-white">News</li>
+                <li class="p-[10px] cursor-pointer hover:bg-[#555] hover:text-white">Contact</li>
+                <li class="p-[10px] cursor-pointer hover:bg-[#555] hover:text-white">About</li>
+            </ul>
+        </nav>
+        <div class="p-6">
+            <h1 class="font-bold text-[2rem] leading-8 max-[400px]:text-[1.7rem]">Responsive Sidebar Example</h1>
+            <p class="mt-5 mb-2">This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+            <p class="mb-5">We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+            <b class="text-[1.4rem] leading-8 max-[400px]:text-[1.2rem]">Resize the browser window to see the effect.</b>
+        </div>
+    </section>
+
+     <script>
+
+     </script>
+</body>
+</html>
