@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrink Navbar on Scroll</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-[1900px]">
+    <header id="header" class="bg-[#f1f1f1] px-2 py-10 sticky top-0 duration-200 ease-in">
+        <nav class="flex justify-between">
+            <span class="cursor-pointer font-bold text-[1.3rem] rounded-sm px-3 py-2 hover:bg-[#ddd]">
+                CompanyLogo
+            </span>
+        <ul class="flex">
+            <li class="flex justify-center items-center cursor-pointer px-3 rounded-sm bg-[dodgerblue] text-white">Home</li>
+            <li class="flex justify-center items-center cursor-pointer px-3 rounded-sm hover:bg-[#ddd]">Contact</li>
+            <li class="flex justify-center items-center cursor-pointer px-3 rounded-sm hover:bg-[#ddd]">About</li>
+        </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.body.onscroll = function() {
+            const headers = document.getElementById("header");
+
+            if ( document.documentElement.scrollTop > 50 ) {
+                headers.classList.replace("py-10" , "py-4")
+                return
+            }
+            
+            headers.classList.replace("py-4" , "py-10")
+        }
+    </script>
+</body>
+</html>
