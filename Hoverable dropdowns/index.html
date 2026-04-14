@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable dropdowns</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="px-3 pt-4">
+        <h1 class="text-[1.3rem] font-medium">Hoverable Dropdown</h1>
+        <p class="my-3">Move the mouse over the button to open the dropdown menu.</p>
+
+        <button id="hover-btn" class="p-4 bg-[#04AA6D] hover:bg-[#3e8e41] text-white text-[1.1rem] relative">Dropdown
+        <ul class="hidden flex-col bg-[#f1f1f1] w-40 shadow-lg shadow-[rgba(0,0,0,0.2)] absolute top-14 left-0">
+            <li class="cursor-pointer hover:bg-[#ddd] p-3 text-left text-black">Link1</li>
+            <li class="cursor-pointer hover:bg-[#ddd] p-3 text-left text-black">Link2</li>
+            <li class="cursor-pointer hover:bg-[#ddd] p-3 text-left text-black">Link3</li>
+        </ul>
+        </button>
+    </div>
+
+    <script>
+        const hoverBtn = document.getElementById("hover-btn");
+        hoverBtn.onmouseover = function() {
+            hoverBtn.firstElementChild.classList.replace("hidden" , "flex")
+        }
+
+        hoverBtn.onmouseout = function() {
+            hoverBtn.firstElementChild.classList.replace("flex" , "hidden")
+        }
+    </script>
+</body>
+</html>
