@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading dropdown</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col gap-3 px-2 py-5">
+        <h1 class="text-[1.3rem] font-bold">Cascading dropdown</h1>
+        
+    <div class="flex gap-2">
+        <p>Subjects:</p>
+        <select id="subjects" class="border-solid border-[1px] border-black rounded-[4px]">
+            <option value="Select Subject">Select Subject</option>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+    </div>
+
+    <div class="flex gap-2">
+        <p>Topics:</p>
+        <select id="topics" class="border-solid border-[1px] border-black rounded-[4px]">
+            <option value="">Please select subject first</option>
+        </select>
+    </div>
+
+    <div class="flex gap-2">
+        <p>Chapters</p>
+        <select name="" id="chapters" class="border-solid border-[1px] border-black rounded-[4px]">
+            <option value="">Please select topics first</option>
+        </select>
+    </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
