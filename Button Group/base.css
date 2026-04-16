@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  color: white;
+  background: #04AA6D;
+}
+.list__items {
+  width: 50%;
+  border: 1px solid green;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px 0;
+}
+.list__items:hover {
+  background: #3e8e41;
+}/*# sourceMappingURL=base.css.map */

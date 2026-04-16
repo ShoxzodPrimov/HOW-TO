@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__items {
+        list-style: none;
+        background: #04AA6D;
+        border: 1px solid green;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+
+        &:hover {
+            background: #3e8e41;
+        }
+    }
+}

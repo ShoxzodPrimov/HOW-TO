@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    color: white;
+    background: #04AA6D;
+
+    &__items {
+        width: 50%;
+        border: 1px solid green;
+        list-style: none;
+        cursor: pointer;
+        text-align: center;
+        padding: 6px 0;
+
+        &:hover {
+            background: #3e8e41;
+        }
+    }
+}

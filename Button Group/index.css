@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__items {
+  list-style: none;
+  background: #04AA6D;
+  border: 1px solid green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.list__items:hover {
+  background: #3e8e41;
+}/*# sourceMappingURL=index.css.map */
