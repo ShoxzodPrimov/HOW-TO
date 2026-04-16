@@ -14,6 +14,11 @@
 }
 
 .list {
+    &__differ {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__items {
         list-style: none;
         cursor: pointer;
@@ -24,10 +29,30 @@
             color: black;
         }
 
-        &--differ {
+        &--modifier {
+            padding: 0;
             display: flex;
             justify-content: space-between;
-            background: #04AA6D;
+            align-items: center;
+
+            &:hover {
+                background: transparent;
+                color: white;
+            }
+
+            .logos {
+                background: #04AA6D;
+                padding: 11px;
+                &:hover {
+                    background:#ddd;
+                    color: black;
+                }
+            }
+
+            .menu-btn-differ {
+                background: none;
+                font-size: 18px;
+            }            
         }
     }
 }
@@ -36,12 +61,18 @@
     color: white;
     background: black;
     border: none;
+    margin-left: auto;
     cursor: pointer;
     padding: 10px;
    
     &:hover {
         background:#ddd;
         color: black;
+    }
+
+    &--differ {
+        background: #333;
+        font-size: 18px;
     }
 }
 
@@ -81,4 +112,12 @@ p {
     padding: 10px;
     background: #555;
     line-height: 2;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.justify-none {
+    justify-content:safe;
 }
