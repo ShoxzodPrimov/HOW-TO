@@ -1,0 +1,32 @@
+.list {
+    display: flex;
+    align-items: center;
+
+    &__items {
+        list-style: none;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #ddd;
+        }
+
+        &--differ {
+            background: dodgerblue;
+
+            &:hover {
+                background: dodgerblue;
+            }
+        }
+
+        &--position {
+            position: relative;
+        }
+    }
+}
+
+.change-size { 
+    font-size:0.5rem;
+    transform: translateY(-2px);
+    display: inline-block;
+}

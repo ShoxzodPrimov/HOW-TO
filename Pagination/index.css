@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  align-items: center;
+}
+.list__items {
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.list__items:hover {
+  background: #ddd;
+}
+.list__items--differ {
+  background: dodgerblue;
+}
+.list__items--differ:hover {
+  background: dodgerblue;
+}
+.list__items--position {
+  position: relative;
+}
+
+.change-size {
+  font-size: 0.5rem;
+  transform: translateY(-2px);
+  display: inline-block;
+}/*# sourceMappingURL=index.css.map */
