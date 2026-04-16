@@ -76,4 +76,13 @@ h2 {
 }
 .category__list__items:hover {
   background: #ddd;
+}
+
+@media (max-width: 600px) {
+  .category-list {
+    flex-direction: column;
+  }
+  .category__list {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */

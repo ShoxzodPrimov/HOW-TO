@@ -89,3 +89,17 @@ h2 {
         }
     }
 }
+
+
+
+// media
+
+@media ( max-width:600px ) {
+    .category-list {
+        flex-direction:column;
+    }
+
+    .category__list {
+        width: 100%;
+    }
+}
