@@ -1,0 +1,18 @@
+$green-600:#04AA6D;
+$green-300:#3e8e41;
+
+.bg-green-600 {
+    background: $green-600;
+    cursor: pointer;
+    border: 1px solid green;
+
+    &:hover {
+        background:$green-300;
+    }
+}
+
+ul {
+    border: 1px solid black;
+    padding: 0;
+    width: 200px;
+}
