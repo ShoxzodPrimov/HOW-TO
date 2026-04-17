@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.list {
+    height:0;
+    top: 200px;
+
+    &__items {
+        cursor: pointer;
+        transition: 0.2s ease-in;
+
+        &--facebook {
+            background:#3B5998;
+        }
+        
+        &--twitter {
+             background:#55ACEE;
+        }
+
+        &--google {
+            background: #dd4b39;
+        }
+
+        &--linkedin {
+            background:  #007bb5;
+        }
+        
+        &--youtube {
+            background:  #bb0000;
+        }
+
+        &:hover {
+            background: black;
+        }
+    }
+}

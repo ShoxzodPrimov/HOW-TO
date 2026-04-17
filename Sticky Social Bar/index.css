@@ -1,0 +1,27 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+.list {
+  height: 0;
+  top: 200px;
+}
+.list__items {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.list__items--facebook {
+  background: #3B5998;
+}
+.list__items--twitter {
+  background: #55ACEE;
+}
+.list__items--google {
+  background: #dd4b39;
+}
+.list__items--linkedin {
+  background: #007bb5;
+}
+.list__items--youtube {
+  background: #bb0000;
+}
+.list__items:hover {
+  background: black;
+}/*# sourceMappingURL=index.css.map */
