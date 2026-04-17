@@ -1,0 +1,17 @@
+.bg-blue {
+    background: dodgerblue;
+}
+
+.cursors {
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background: #ddd;
+    }
+}
+
+.cursor-active {
+    border-radius: 2px;
+    cursor: pointer;
+}
