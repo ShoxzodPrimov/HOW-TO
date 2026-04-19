@@ -1,7 +1,3 @@
-// rotate-[-17deg]
-// rotate-[17deg]
-// opacity - 0
-
 const menu_button = document.getElementById("menu-btn");
 
 menu_button.onclick = function(e) {
