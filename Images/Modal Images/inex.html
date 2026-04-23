@@ -11,7 +11,7 @@
 <section class="relative">    
     <div id="modal" class="hidden flex-col absolute bg-[rgba(0,0,0,0.9)] w-[100%] h-[100vh]"> //flex
         <div class="border-solid border-black border-2 w-[100%] flex justify-end pr-5">
-            <i onclick="closeModal()" class="bi bi-x text-3xl cursor-pointer text-white hover:text-[#bbb]"></i>
+            <i onclick="closeModal()" accesskey="c" class="bi bi-x text-3xl cursor-pointer text-white hover:text-[#bbb]"></i>
         </div>
         <div class="flex items-center flex-col mt-32">
             <img id="modal-img" class="scale-0 h-auto w-96 duration-300 ease-in" src="./nature.jpg">
@@ -22,14 +22,14 @@
         <h1 class="text-black font-bold text-[1.3rem]">Image Modal</h1>
         <p class="text-[0.9rem] mt-3">In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
         <p class="text-[0.9rem] my-2">We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
-        <img onclick="openModal()" class="h-auto w-40 cursor-pointer" src="./nature.jpg" alt="modal img">
+        <img onclick="openModal()" accesskey="o" class="h-auto w-40 cursor-pointer" src="./nature.jpg" alt="modal img">
     </div>
+
 </section>
 
 <script>
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
-
 
     function openModal() {
         modal.classList.replace( "hidden" , 'flex' );
