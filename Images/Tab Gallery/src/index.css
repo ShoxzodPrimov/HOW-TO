@@ -1,0 +1,36 @@
+#showModal img, .modal-img {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.modal-img {
+  cursor: pointer;
+}
+.modal-img:hover {
+  opacity: 50%;
+}
+
+#showModal {
+  margin-top: 20px;
+  position: relative;
+}
+#showModal i {
+  right: 10px;
+  top: 20px;
+  color: white;
+  position: absolute;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 10px;
+  transition: 0.1s linear;
+}
+#showModal i:hover {
+  background: #ccc;
+}/*# sourceMappingURL=index.css.map */
