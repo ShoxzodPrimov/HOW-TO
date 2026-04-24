@@ -1,0 +1,21 @@
+img {
+    height: 300px;
+    width: 350px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+
+$img_styles:blur(5px) , brightness(6) , contrast(2) , grayscale(1) , invert(1) , opacity(0.5) , drop-shadow(10px 10px 10px green) , hue-rotate(120deg) , saturate(10%) , sepia(300%);
+
+$i:1;
+@each $clas in $img_styles {
+    .img_#{$i} {
+        filter: $clas;
+    }
+
+    $i: $i + 1;
+}

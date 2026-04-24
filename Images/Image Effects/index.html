@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effects</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./src/assets/img/ananas.jpg" alt="">
+    </div>
+    <script>
+        const container = document.querySelector(".container");
+        const x = new Array(10).fill('').forEach(
+            (_ , index) => {
+                container.innerHTML += `<img class = img_${index} src="./src/assets/img/ananas.jpg" alt="">`
+                console.log(index)
+            }
+        )
+
+    </script>
+</body>
+</html>

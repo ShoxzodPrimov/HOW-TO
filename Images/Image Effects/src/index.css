@@ -1,0 +1,50 @@
+img {
+  height: 300px;
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img_1 {
+  filter: blur(5px);
+}
+
+.img_2 {
+  filter: brightness(6);
+}
+
+.img_3 {
+  filter: contrast(2);
+}
+
+.img_4 {
+  filter: grayscale(1);
+}
+
+.img_5 {
+  filter: invert(1);
+}
+
+.img_6 {
+  filter: opacity(0.5);
+}
+
+.img_7 {
+  filter: drop-shadow(10px 10px 10px green);
+}
+
+.img_8 {
+  filter: hue-rotate(120deg);
+}
+
+.img_9 {
+  filter: saturate(10%);
+}
+
+.img_10 {
+  filter: sepia(300%);
+}/*# sourceMappingURL=index.css.map */

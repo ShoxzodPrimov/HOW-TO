@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <div class="container"></div>
+
+    <script>
+        const container = document.querySelector(".container");
+        const users = [
+            {
+                name:"Jane Doe",
+                job:"CEO & Founder",
+                img_url:"JoeDoe.jpg"
+            },
+        
+            {
+                name:"Mike Ross",
+                job:"Art Director",
+                img_url:"MikeRoss.jpg"
+            },
+
+            {
+                name:"John Doe",
+                job:"Designer",
+                img_url:"JohnDoe.jpg"
+            },
+        ];
+
+        users.forEach(
+            user => container.innerHTML += 
+            `
+        <div class="items">
+            <div>
+                <img src="./public/${user.img_url}">
+            </div>
+            <div class="text-block">
+                <h2>${user.name}</h2>
+                <p class="title">${user.job}</p>
+                <p class="title__description">Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p class="bottom-text">example@example.com</p>
+                <button>Contact</button>
+            </div>
+        </div>
+            `
+        )
+
+    </script>
+</body>
+</html>
