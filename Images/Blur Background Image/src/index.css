@@ -10,6 +10,7 @@
 .bg-image {
   background: url(../public/professional.webp) no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   filter: blur(8px);
 }
@@ -23,7 +24,7 @@
   flex-direction: column;
   font-weight: 900;
   gap: 15px;
-  width: 400px;
+  max-width: 600px;
   margin: auto;
   top: 0;
   z-index: 1;
