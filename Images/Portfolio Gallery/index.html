@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+
+<div class="container">
+        <h1>MYLOGO.COM</h1>
+        <hr>
+        <b>PORTFOLIO</b>
+        <p>Resize the browser window to see the responsive effect.</p>
+    
+    <div class="cards"></div>
+    <div class="bear-img">
+        <img src="./public/p3.jpg" alt="bear img">
+    </div>
+</div>
+
+    <script>
+        const images = ['mountains.jpg' , "lights.jpg" , "nature.jpg" , "p3.jpg"];
+        const cards = document.querySelector(".cards");
+
+        images.forEach(
+            img => cards.innerHTML += ` <div class="cards__items">
+                <img src="./public/${img}" alt="">
+                <div class="cards__context">
+                    <h2>My Work</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                    </p>
+                </div>
+            </div> `
+        )
+
+    </script>
+</body>
+</html>
