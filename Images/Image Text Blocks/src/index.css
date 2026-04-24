@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+}
+
+.text-block {
+  background: black;
+  color: white;
+  padding: 15px;
+  width: 200px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
