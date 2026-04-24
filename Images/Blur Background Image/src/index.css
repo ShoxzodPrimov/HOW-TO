@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.bg-image {
+  background: url(../public/professional.webp) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(8px);
+}
+
+.text-box {
+  position: absolute;
+  border: 3px solid #f1f1f1;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  gap: 15px;
+  width: 400px;
+  margin: auto;
+  top: 0;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+}/*# sourceMappingURL=index.css.map */
