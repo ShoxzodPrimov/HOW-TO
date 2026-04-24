@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin images($img_url) {
+    background: url("../public/"+$img_url) no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    transform: translateY(-100px);
+}
+
+$img_list: 'nature1.avif' , 'nature3.avif' , 'nature4.jpg' , 'nature5.avif';
+
+$i:1;
+@each $img in $img_list {
+    
+    .image#{$i} {
+        @include images($img)
+    }
+
+    $i:$i + 1;
+}
+
+p {
+    position: sticky;
+    font-size: 4rem;
+    color: white;
+    border: 5px solid currentColor;
+    padding: 10px;
+    width: 180px;
+    margin: auto;
+    top: 389px;
+    z-index: 1;
+}

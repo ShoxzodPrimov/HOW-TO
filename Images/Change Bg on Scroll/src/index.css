@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  width: 100%;
+  transform: translateY(-100px);
+}
+
+.image1 {
+  background: url("../public/nature1.avif") no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.image2 {
+  background: url("../public/nature3.avif") no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.image3 {
+  background: url("../public/nature4.jpg") no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.image4 {
+  background: url("../public/nature5.avif") no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+p {
+  position: sticky;
+  font-size: 4rem;
+  color: white;
+  border: 5px solid currentColor;
+  padding: 10px;
+  width: 180px;
+  margin: auto;
+  top: 389px;
+  z-index: 1;
+}/*# sourceMappingURL=index.css.map */
