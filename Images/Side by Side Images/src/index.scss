@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    &__images {   
+        height:auto;
+        width:100%;
+    }
+}
+
+// float:
+
+.left {
+    float:left;
+    width: calc( 98% / 3);
+    height: 30%;
+}
+
+.right {
+    float:right;
+    width:calc( 98% / 3);
+    height:30%;
+}
+
+.center {
+    width:calc( 98% / 3);
+    height:30%;
+    margin-left: 1%;
+}
+
+.float-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1%;
+
+    &__images {
+        width: calc(99% / 3);
+    }
+}

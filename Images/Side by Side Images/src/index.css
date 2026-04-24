@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-container__images {
+  height: auto;
+  width: 100%;
+}
+
+.left {
+  float: left;
+  width: 32.6666666667%;
+  height: 30%;
+}
+
+.right {
+  float: right;
+  width: 32.6666666667%;
+  height: 30%;
+}
+
+.center {
+  width: 32.6666666667%;
+  height: 30%;
+  margin-left: 1%;
+}
+
+.float-container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1%;
+}
+.flex-container__images {
+  width: 33%;
+}/*# sourceMappingURL=index.css.map */
