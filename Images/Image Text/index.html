@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        const paragraph = ['Top Left' , "Top Right" , "Bottom Left" , "Bottom Right" , "Centered"];
+        const container = document.querySelector(".container");
+        paragraph.forEach((p , index) => container.innerHTML += `<p id = "_${index}">${p}</p>`)
+    </script>
+</body>
+</html>

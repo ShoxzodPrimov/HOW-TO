@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../public/nature.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: white;
+}
+
+#_0 {
+  top: 0;
+  position: absolute;
+  left: 10px;
+}
+
+#_1 {
+  right: 10px;
+  top: 0;
+  position: absolute;
+}
+
+#_2 {
+  bottom: 0;
+  right: 10px;
+  position: absolute;
+}
+
+#_3 {
+  bottom: 0;
+  position: absolute;
+  left: 10px;
+}
+
+#_4 {
+  margin: auto;
+}/*# sourceMappingURL=index.css.map */
