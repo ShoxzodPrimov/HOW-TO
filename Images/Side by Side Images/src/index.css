@@ -21,6 +21,7 @@
 }
 
 .center {
+  float: none;
   width: 32.6666666667%;
   height: 30%;
   margin-left: 1%;

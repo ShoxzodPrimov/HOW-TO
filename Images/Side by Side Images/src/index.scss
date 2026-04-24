@@ -10,22 +10,22 @@
 }
 
 // float:
-
-.left {
-    float:left;
+@mixin floats($float-direction) {
+    float: $float-direction;
     width: calc( 98% / 3);
     height: 30%;
 }
 
+.left {
+    @include floats(left);
+}
+
 .right {
-    float:right;
-    width:calc( 98% / 3);
-    height:30%;
+    @include floats(right);
 }
 
 .center {
-    width:calc( 98% / 3);
-    height:30%;
+    @include floats(none);
     margin-left: 1%;
 }
 
@@ -34,6 +34,8 @@
     margin: auto;
 }
 
+
+// flex
 .flex-container {
     display: flex;
     gap: 1%;
