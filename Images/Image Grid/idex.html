@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+
+    <h1>Image Grids</h1>
+    <p>Click on the buttons to change the grid view.</p>
+    <div class="changeButtons">
+        <button class="btn" onclick="setActive(this)">1</button>
+        <button class="btn" onclick="setActive(this)">2</button>
+        <button class="btn btn__active" onclick="setActive(this)">4</button>
+    </div>
+
+    <div class="container"></div>
+
+    <script>
+        const container = document.querySelector('.container');
+
+        const images = [
+            ['wedding.jpg' , 'rocks.jpg' , 'falls.jpg' , "paris.jpg" , "nature.jpg" , "mist.jpg" , "paris.jpg"],
+            ['underwater.jpg' , 'ocean.jpg' , 'wedding.jpg' , "mountainskies.jpg" , "rocks.jpg" , "underwater.jpg"],
+            ['wedding.jpg' , 'rocks.jpg' , 'falls.jpg' , "paris.jpg" , "nature.jpg" , "mist.jpg" , "paris.jpg"],
+            ['underwater.jpg' , 'ocean.jpg' , 'wedding.jpg' , "mountainskies.jpg" , "rocks.jpg" , "underwater.jpg"],
+        ];
+
+        const blocks = new Array(4).fill("").
+                                    map(( _ , index ) => `<div class="block${index+1}"></div>` ).
+                                    join('');
+
+        container.innerHTML = blocks;
+
+
+        for( let i = 0; i < container.children.length; i++ ) 
+            images[i].forEach(
+                img => {
+                    const newImage = document.createElement("img");
+                    newImage.src = `./src/img/${img}`;
+                    container.children[i].append(newImage);
+                }
+            )
+
+        function setActive(btn) {
+            container.style.gridTemplateColumns = `repeat(${btn.textContent} , 1fr)`;
+            const btnList = document.querySelectorAll(".btn");
+            btnList.forEach(button => button.classList.remove("btn__active"));
+            btn.classList.add("btn__active");
+        }
+</script>
+</body>
+</html>

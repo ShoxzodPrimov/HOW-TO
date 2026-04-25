@@ -1,0 +1,50 @@
+.container {
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap:10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+@for $i from 1 through 4 {
+    .block#{$i} {     
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+}
+
+h1 , p {
+    text-align: center;
+}
+
+.changeButtons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    &:hover {
+        background: #ccc;
+    }
+
+    &__active {
+        background: #666;
+        color: white;
+
+        &:hover {
+            background: #666;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.changeButtons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.btn:hover {
+  background: #ccc;
+}
+.btn__active {
+  background: #666;
+  color: white;
+}
+.btn__active:hover {
+  background: #666;
+}/*# sourceMappingURL=index.css.map */
