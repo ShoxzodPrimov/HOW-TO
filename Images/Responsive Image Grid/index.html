@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Grid</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>    
+    <div class="container"></div>
+    <script>
+        const container = document.querySelector(".container");
+        
+        const images = [
+            ['wedding.jpg' , 'rocks.jpg' , 'falls.jpg' , "paris.jpg" , "nature.jpg" , "mist.jpg" , "paris.jpg"],
+            ['underwater.jpg' , 'ocean.jpg' , 'wedding.jpg' , "mountainskies.jpg" , "rocks.jpg" , "underwater.jpg"],
+            ['wedding.jpg' , 'rocks.jpg' , 'falls.jpg' , "paris.jpg" , "nature.jpg" , "mist.jpg" , "paris.jpg"],
+            ['underwater.jpg' , 'ocean.jpg' , 'wedding.jpg' , "mountainskies.jpg" , "rocks.jpg" , "underwater.jpg"],
+        ];
+
+        const boxes = new Array(4).fill('').
+                                  forEach((_ , index )  => container.innerHTML += `<div class="box${index+1}"></div>` );
+        
+        for( let i = 0 ; i < container.children.length; i++ )
+            images[i].forEach( img => container.children[i].innerHTML += `<img src = "./assets/img/${img}" />`);
+
+    </script>
+</body>
+</html>
