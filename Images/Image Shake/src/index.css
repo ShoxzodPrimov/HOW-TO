@@ -1,0 +1,18 @@
+img {
+  height: 250px;
+  width: 300px;
+  animation: ease-in-out infinite 0.1s;
+  cursor: pointer;
+}
+img:hover {
+  animation-name: shake-image;
+}
+
+@keyframes shake-image {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}/*# sourceMappingURL=index.css.map */
