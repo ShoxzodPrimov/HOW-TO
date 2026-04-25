@@ -1,8 +1,43 @@
-img {
+.flip {
   width: 30vw;
   height: auto;
   cursor: pointer;
 }
-img:hover {
+.flip:hover {
   transform: scaleX(-1);
+}
+
+.flip__container {
+  position: relative;
+  height: 250px;
+  width: 400px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: 1s;
+}
+.flip__container:hover {
+  transform: rotateY(180deg);
+}
+.flip__front {
+  position: absolute;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+.flip__front img {
+  height: 100%;
+  width: 100%;
+}
+.flip__back {
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h1, p {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

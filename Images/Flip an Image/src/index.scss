@@ -1,8 +1,52 @@
-img {
+.flip {
     width: 30vw;
     height: auto;
     cursor: pointer;
     &:hover {
         transform: scaleX(-1);
     }
+}
+
+
+// 3D Flip:
+
+.flip {
+    &__container {
+        position: relative;
+        height:250px;
+        width:400px;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        transition: 1s;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__front {
+        position: absolute;
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__back {
+        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #555;
+        color: white;
+        transform: rotateY(180deg);
+    }
+}
+
+h1 , p {
+    text-align: center;
 }
