@@ -1,0 +1,34 @@
+.container {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container:hover .fade-title {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1, p {
+  margin-bottom: 0;
+}
+
+.fade-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 7vw;
+  opacity: 0;
+  font-weight: 100;
+  transition: 0.2s ease-in opacity;
+  background: red;
+}/*# sourceMappingURL=index.css.map */
