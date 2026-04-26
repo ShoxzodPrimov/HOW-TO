@@ -1,0 +1,34 @@
+.container {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container:hover .fade-zoom {
+  transform: scale(1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1, p {
+  margin-bottom: 0;
+}
+
+.fade-zoom {
+  display: flex;
+  transform: scale(0);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1vw;
+  font-weight: 100;
+  transition: 0.2s ease-in transform;
+  background: #008CBA;
+}/*# sourceMappingURL=index.css.map */
