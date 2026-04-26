@@ -1,0 +1,96 @@
+@mixin containers {
+    height: 30%;
+    width: 20%;
+    cursor: pointer;
+    position: relative;
+}
+
+@mixin fades($h , $w , $property ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: $h;
+    overflow: hidden;
+    width: $w;
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
+    transition: 0.4s ease-in $property;
+    background: #008CBA;
+    white-space: nowrap;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+h1  {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+
+// top
+.container {
+    @include containers;
+    &:hover {
+        .fade-top {
+            height: 100%;
+        }
+    }
+}
+
+.fade-top {
+    @include fades(0 , 100% , height);
+}
+
+
+// bottom
+.container2 {
+    @include containers;
+    &:hover {
+        .fade-bottom {
+            height: 100%
+        }
+    }
+}
+
+
+.fade-bottom {
+    @include fades(0 , 100% , height);
+    bottom:0;
+}
+
+// left
+.container3 {
+    @include containers;
+    &:hover {
+        .fade-left {
+            width:100%
+        }
+    }
+}
+
+
+.fade-left {
+    @include fades(100% , 0 , width);
+    left:0;
+}
+
+// right:
+.container4 {
+    @include containers;
+    &:hover {
+        .fade-right {
+            width:100%
+        }
+    }
+}
+
+
+.fade-right {
+    @include fades(100% , 0 , width);
+    right:0;
+}

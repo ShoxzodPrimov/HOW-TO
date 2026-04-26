@@ -1,0 +1,116 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.container {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container:hover .fade-top {
+  height: 100%;
+}
+
+.fade-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  font-size: 1vw;
+  font-weight: 100;
+  transition: 0.4s ease-in height;
+  background: #008CBA;
+  white-space: nowrap;
+}
+
+.container2 {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container2:hover .fade-bottom {
+  height: 100%;
+}
+
+.fade-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  font-size: 1vw;
+  font-weight: 100;
+  transition: 0.4s ease-in height;
+  background: #008CBA;
+  white-space: nowrap;
+  bottom: 0;
+}
+
+.container3 {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container3:hover .fade-left {
+  width: 100%;
+}
+
+.fade-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  width: 0;
+  color: white;
+  font-size: 1vw;
+  font-weight: 100;
+  transition: 0.4s ease-in width;
+  background: #008CBA;
+  white-space: nowrap;
+  left: 0;
+}
+
+.container4 {
+  height: 30%;
+  width: 20%;
+  cursor: pointer;
+  position: relative;
+}
+.container4:hover .fade-right {
+  width: 100%;
+}
+
+.fade-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  width: 0;
+  color: white;
+  font-size: 1vw;
+  font-weight: 100;
+  transition: 0.4s ease-in width;
+  background: #008CBA;
+  white-space: nowrap;
+  right: 0;
+}/*# sourceMappingURL=index.css.map */
