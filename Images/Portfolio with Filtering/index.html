@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Filtering</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+      
+        <div class="buttons">
+            <button class="buttons__click buttons__click--active">Show all</button>
+            <button class="buttons__click">Nature</button>
+            <button class="buttons__click">Cars</button>
+            <button class="buttons__click">People</button>
+        </div>
+
+        <div class="block__wrapper">
+            <div class="block__nature"></div>
+            <div class="block__cars"></div>
+            <div class="block__people"></div>
+        </div>
+
+
+    <script type="module">
+        import imgTags from "./data/data.js";
+        const blockWrapper = document.querySelector(".block__wrapper");
+        const buttons = document.querySelector(".buttons");
+        const buttonClick = document.querySelectorAll(".buttons__click");
+
+        for( let i = 0; i < blockWrapper.children.length; i++ ) {
+            blockWrapper.children[i].innerHTML = imgTags[i]
+        }
+
+        function setActive(target) {
+            const navigator = target.textContent.toLowerCase();
+            const blocks = document.querySelector(`.block__${navigator}`);
+            buttonClick.forEach(item => item.classList.remove('buttons__click--active'));
+            target.classList.add('buttons__click--active');
+
+            function Orientation(dipaly) {
+               for( let el of blockWrapper.children ) {
+                 el.style.display = dipaly;
+               }
+            }
+
+            if ( navigator === "show all" ) {
+                Orientation("grid");
+                return
+            }
+
+            Orientation("none");
+            blocks.style.display = "grid";
+        }
+
+        buttons.onclick = function(e) {
+            if ( e.target.textContent === "Nature" )
+                setActive(e.target);
+
+            else if ( e.target.textContent === "Cars")
+                setActive(e.target);
+
+            else if ( e.target.textContent === "People" )
+                setActive(e.target);
+
+            else if ( e.target.textContent === "Show all" ) 
+                setActive(e.target);
+        }
+
+    </script>
+</body>
+</html>

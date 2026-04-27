@@ -1,0 +1,62 @@
+body {
+  background: #f1f1f1;
+}
+
+.block__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.block__nature {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.block__cars {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.block__people {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.items {
+  padding: 10px;
+  background: white;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+.buttons__click {
+  padding: 10px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+.buttons__click:hover {
+  background: #ddd;
+}
+.buttons__click--active {
+  background: #666;
+  color: white;
+}
+.buttons__click--active:hover {
+  background: #666;
+}/*# sourceMappingURL=index.css.map */

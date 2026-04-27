@@ -1,0 +1,66 @@
+// base
+body {
+    background:  #f1f1f1;
+}
+
+// lists
+$blockList: nature , cars , people;
+
+// functions
+@mixin displays ( $display ) {
+    display: $display;
+    flex-direction: column;
+    grid-template-columns: repeat(3 , 1fr);
+    gap:10px
+}
+
+// blocks
+.block {
+    &__wrapper {
+        @include displays(flex);
+    }
+
+    @each $block in $blockList {
+        &__#{$block} {
+            @include displays(grid);
+        }
+    }
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.items {
+    padding: 10px;
+    background: white;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.buttons {
+    margin-bottom: 10px;
+
+    &__click {
+        padding: 10px;
+        background: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: #ddd;
+        }
+
+        &--active {
+            background: #666;
+            color: white;
+            
+            &:hover {
+                background: #666;
+            }
+        }
+    }
+}
