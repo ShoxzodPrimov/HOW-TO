@@ -1,0 +1,103 @@
+* {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            max-height: 650px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        button {
+            border: none;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .left , .right {
+            position: absolute;
+            padding:16px;
+            top:45%;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .left:hover , .right:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        .dote {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            height: 30px;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .dotes {
+            background:  #bbb;
+            border-radius: 50%;
+            height:30px;
+            width:30px;
+            cursor: pointer;
+        }
+
+        .dotes:hover {
+            background: #717171;
+        }
+
+        .active {
+            background:#717171;
+        }
+
+        .active:hover {
+            background: #717171;
+        }
+
+        .caption {
+            position: absolute;
+            color: white;
+            font-size: 2.1vw;
+            bottom: 5px;
+            left: 45%;
+        }
+
+        .page-direction {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .opacity {
+            animation-name: fade;
+            animation-timing-function: ease-in-out;
+            animation-duration: 0.8s;
+            animation-iteration-count:1;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 100%;
+            }
+        }
