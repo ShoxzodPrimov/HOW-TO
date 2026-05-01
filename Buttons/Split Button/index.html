@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Button</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<div class="flex text-white items-center w-25">
+    <button class="bg-[#2196F3] p-3 hover:bg-[#0b7dda]">
+        Button
+    </button>
+    <div id="down" class="bg-[#2196F3] p-3 hover:bg-[#0b7dda] relative"> 
+        <i class="bi bi-caret-down-fill block text-sm mt-1"></i>
+        <ul class="bg-[#f1f1f1] absolute top-12 left-0 text-black hidden">
+            <li class="hover:bg-[#ddd] cursor-pointer py-2 px-5">Link1</li>
+            <li class="hover:bg-[#ddd] cursor-pointer py-2 px-5">Link2</li>
+            <li class="hover:bg-[#ddd] cursor-pointer py-2 px-5">Link3</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const listDown = document.getElementById("down");
+    const list = document.querySelector("ul");
+
+    listDown.onmouseover = () =>
+        list.classList.replace("hidden" , "block")
+
+    listDown.onmouseleave = () =>
+        list.classList.replace("block" , "hidden")
+</script>
+</body>
+</html>
