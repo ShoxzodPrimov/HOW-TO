@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Buttons</title>
+    <link href="/dist/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container flex gap-2 flex-col">
+        <div id="width-radius"></div>
+        <div id="widthout-radious"></div>
+    </div>
+
+<script type="module">
+    import { btnList } from "./data.js";
+    const widthRadius = document.getElementById("width-radius");
+    const widthoutRadius = document.getElementById("widthout-radious");
+
+    const buttons = btnList.map(
+        button => ` <button class = "text-[${button.color}] px-5 py-3 outline-1 outline-[${button.color}] cursor-pointer hover:bg-[${button.color}] hover:text-white">${button.text}</button> `
+    ).join('');
+
+    widthRadius.innerHTML = buttons;
+    widthoutRadius.innerHTML = buttons;
+    widthRadius.lastElementChild.classList.add('text-black');
+    widthoutRadius.lastElementChild.classList.add('text-black');
+
+
+    for( let items of widthoutRadius.children )
+        console.log(items.classList.add('rounded-[3px]'))
+
+
+</script>
+</body>
+</html>

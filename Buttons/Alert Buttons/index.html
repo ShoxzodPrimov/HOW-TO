@@ -8,19 +8,16 @@
 </head>
 <body>
     <div class="container text-white flex flex-wrap"></div>
-
     <script type="module">
-    import { btnList } from "./data.js";
-        
-
+    import { btnList } from "./data.js";        
     const container = document.querySelector(".container");
+
     const buttons = btnList.map(
         button => `<button class = 'bg-[${button.color}] p-2 cursor-pointer duration-100 ease-in hover:bg-[${button.hoverColor}]'>${button.text}</button>`
     );
 
     container.innerHTML = buttons;
     container.lastElementChild.classList.add("text-black");
-
     </script>
 </body>
 </html>
