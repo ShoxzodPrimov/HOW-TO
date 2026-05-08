@@ -1,0 +1,21 @@
+.bg {
+  background: url(assets/img_snow.jpg);
+  background-size: cover;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  background: #555;
+  border: none;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.btn:hover {
+  background: black;
+}/*# sourceMappingURL=index.css.map */
