@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top Button</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Scroll Down</h1>
+        </nav>
+        <div class="block">
+            <p>This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</p>
+            <button onclick="Top()">Top</button>
+        </div>
+    </header>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        window.onscroll = function() {
+        if (window.scrollY > 100) {
+            btn.style.display = "block";
+            return
+        } 
+            btn.style.display = "none";
+        }
+
+        function Top() {
+            window.scrollTo({
+                behavior:"smooth"
+            })
+
+            
+            window.document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

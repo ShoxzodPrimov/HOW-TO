@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: red;
+    padding: 15px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+
+.nav {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.block {
+    padding: 10px;
+    background: silver;
+    height: 1900px;
+}
