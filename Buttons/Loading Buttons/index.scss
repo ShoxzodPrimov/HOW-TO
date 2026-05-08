@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    gap: 5px;
+}
+
+#loading {
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 1rem;
+}
+
+@keyframes loading {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #04AA6D;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
