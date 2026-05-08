@@ -1,0 +1,40 @@
+.fade-in {
+  background: #f4511e;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.2s ease-in all;
+  font-size: 20px;
+  opacity: 0.5;
+}
+.fade-in:hover {
+  opacity: 1;
+}
+
+.fade-out {
+  background: #f4511e;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.2s ease-in all;
+  font-size: 20px;
+}
+.fade-out:hover {
+  opacity: 0.5;
+}
+
+.fade-bg {
+  background: silver;
+  cursor: pointer;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  transition: 0.2s ease-in all;
+  font-size: 20px;
+}
+.fade-bg:hover {
+  background: #3e8e41;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

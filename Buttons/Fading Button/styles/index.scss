@@ -1,0 +1,34 @@
+@mixin fade($bg , $text ) {
+    background: $bg;
+    cursor: pointer;
+    border: none;
+    color: $text;
+    padding: 10px 20px;
+    transition: 0.2s ease-in all;
+    font-size: 20px;
+}
+
+.fade-in {
+    @include fade(#f4511e , white );
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    @include fade(#f4511e , white);
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.fade-bg {
+    @include fade(silver , black);
+
+    &:hover {
+        background: #3e8e41;
+        color: white;
+    }
+}
