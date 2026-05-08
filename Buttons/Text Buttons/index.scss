@@ -1,0 +1,16 @@
+button {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background:  #eee;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}

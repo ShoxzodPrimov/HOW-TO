@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Buttons</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container"></div>
+
+    <script>
+        const data = [
+            {
+                title:"Success",
+                color:'green'
+            },
+
+            {
+                title:"Info",
+                color:'dodgerblue'
+            },
+
+            {
+                title:"Warning",
+                color:'orange'
+            },
+
+            {
+                title:"Danger",
+                color:'red'
+            },
+
+            {
+                title:"Default",
+                color:'black'
+            }
+        ];
+        
+        const container = document.querySelector('.container');
+        const btn = data.map(
+            item => `<button style='color:${item.color}'>${item.title}</button>`
+        ).join('');
+
+        container.innerHTML = btn;
+    </script>
+</body>
+</html>
