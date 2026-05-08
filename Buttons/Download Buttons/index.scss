@@ -1,0 +1,16 @@
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: dodgerblue;
+    border: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        background: royalblue;
+    }
+
+    &:active {
+        transform: scale(1.01);
+    }
+}
