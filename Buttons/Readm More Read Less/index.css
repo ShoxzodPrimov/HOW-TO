@@ -1,0 +1,26 @@
+.container {
+  background: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background: rgb(109, 109, 109);
+  cursor: pointer;
+  color: white;
+  transition: 0.3s all;
+}
+button:hover {
+  background: silver;
+  color: black;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
