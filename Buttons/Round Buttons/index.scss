@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background: #04AA6D;
+    color: white;
+}
+
+.two {
+    border-radius: 2px;
+}
+
+.four {
+    border-radius: 4px;
+}
+
+.eight {
+    border-radius: 8px;
+}
+
+.twelve {
+    border-radius: 12px;
+}
+
+.fivty {
+    border-radius: 50%;
+}
