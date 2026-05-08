@@ -1,0 +1,19 @@
+@mixin buttons {
+    border: none;
+    padding: 10px 20px;
+    background: #ddd;
+    cursor: pointer;
+
+    &:hover {
+        background:#f1f1f1;
+    }
+}
+
+.pill {
+    @include buttons();
+    border-radius: 20px;
+}
+
+.square {
+    @include buttons();
+}

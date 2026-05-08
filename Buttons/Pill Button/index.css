@@ -1,0 +1,22 @@
+.pill {
+  border: none;
+  padding: 10px 20px;
+  background: #ddd;
+  cursor: pointer;
+}
+.pill:hover {
+  background: #f1f1f1;
+}
+.pill {
+  border-radius: 20px;
+}
+
+.square {
+  border: none;
+  padding: 10px 20px;
+  background: #ddd;
+  cursor: pointer;
+}
+.square:hover {
+  background: #f1f1f1;
+}/*# sourceMappingURL=index.css.map */
