@@ -1,0 +1,29 @@
+@mixin buttons($gap) {
+    display: flex;
+    gap:$gap
+}
+
+.icon-btn {
+    background:dodgerblue;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    @include buttons(5px);
+
+    &:hover {
+        background: royalblue;
+    }
+}
+
+.container {
+    @include buttons(10px);
+}
+
+.text {
+    @include buttons(10px);
+    margin-top: 20px;
+}

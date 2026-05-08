@@ -1,0 +1,26 @@
+.icon-btn {
+  background: dodgerblue;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+.icon-btn:hover {
+  background: royalblue;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.text {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}/*# sourceMappingURL=index.css.map */
