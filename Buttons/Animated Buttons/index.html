@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Buttons</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <button class="click">Click</button>
+    <button class="hide"><span>Click</span></button>
+    <button class="effect">Click
+        <div class="opacity">
+
+        </div>
+    </button>
+
+    <script>
+        const effect = document.querySelector(".effect");
+        effect.onclick = function() {
+            const opacity = document.querySelector(".opacity");
+            opacity.classList.add('side-effect');
+
+            setTimeout( () => {
+                opacity.classList.remove('side-effect');
+            } , 300 );
+        }
+    </script>
+</body>
+</html>
