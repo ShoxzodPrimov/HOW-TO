@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show Gallery</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <buttn class="prev">❮</buttn>
+        <buttn class="next">❯</buttn>
+
+        <span class="number"> <span class="order">1</span> / 6</span>
+        <img class="images salom" src="./assets/img_woods.jpg" alt="">
+        <img class="images" src="./assets/img_5terre_wide.jpg" alt="">
+        <img class="images" src="./assets/img_mountains_wide.jpg" alt="">
+        <img class="images" src="./assets/img_lights_wide.jpg" alt="">
+        <img class="images" src="./assets/img_nature.jpg" alt="">
+        <img class="images" src="./assets/img_snow_wide.jpg" alt="">
+    </div>
+    <div class="name">The Woods</div>
+    <div class="preview">
+        <img onclick="currentSlide(0)" class="previews previews--differ" src="./assets/img_woods.jpg" alt="">
+        <img onclick="currentSlide(1)" class="previews" src="./assets/img_5terre_wide.jpg" alt="">
+        <img onclick="currentSlide(2)" class="previews" src="./assets/img_mountains_wide.jpg" alt="">
+        <img onclick="currentSlide(3)" class="previews" src="./assets/img_lights_wide.jpg" alt="">
+        <img onclick="currentSlide(4)" class="previews" src="./assets/img_nature.jpg" alt="">
+        <img onclick="currentSlide(5)" class="previews" src="./assets/img_snow_wide.jpg" alt="">
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>

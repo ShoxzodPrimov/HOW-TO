@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  max-height: 400px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.prev {
+  left: 0;
+  position: absolute;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.1s ease-in;
+  top: 50%;
+}
+.prev:hover {
+  background: rgba(49, 49, 49, 0.9);
+}
+
+.next {
+  right: 0;
+  position: absolute;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.1s ease-in;
+  top: 50%;
+}
+.next:hover {
+  background: rgba(49, 49, 49, 0.9);
+}
+
+.name {
+  background: black;
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.number {
+  position: absolute;
+  color: white;
+  font-size: 1.3rem;
+  left: 10px;
+  top: 10px;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 600px;
+  margin: auto;
+}
+
+.previews {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.previews--differ {
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */
