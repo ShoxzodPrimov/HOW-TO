@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px 20px;
+}
+
+#dropdown {
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #04AA6D;
+    cursor: pointer;
+
+    &:hover {
+        background: #3e8e41;
+    }
+}
+
+.container {
+    width: 15%;
+}
+
+#search {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    border: 1px solid silver;
+    background: url('https://icons.veryicon.com/png/o/miscellaneous/light-e-treasure-3/search-286.png');
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    background-position: 5px 6px;
+    color: rgb(131, 131, 131);
+    border-bottom: none;
+
+    &::placeholder {
+        font-size: 0.7rem;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    &__items {
+        list-style: none;
+        padding: 10px;
+        background: #f6f6f6;
+        cursor: pointer;
+        font-weight: 300;
+        border: 1px solid silver;
+
+        &:hover {
+            background: #ddd;
+        }
+    }
+}
+
+.active {
+    display: none;
+}
