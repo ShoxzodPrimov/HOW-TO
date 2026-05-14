@@ -1,0 +1,64 @@
+@mixin nav_items($bg , $cursor) {
+    display: flex;
+    background:$bg;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid silver;
+    cursor:$cursor;
+}
+
+@mixin parametrs($weight) {
+    width: 50%;
+    font-weight: $weight;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background: rgb(86, 86, 86);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background: green;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        @include nav_items( #f1f1f1 , auto );
+    }
+
+    &__name  , &__country {
+        @include parametrs(900)
+    }
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        @include nav_items( none , pointer );
+
+        &:hover {
+            background:  #f1f1f1;
+        }
+    }
+
+    &__name , &__country {
+        @include parametrs(200)
+    }
+}
