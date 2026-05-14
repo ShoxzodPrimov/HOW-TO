@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparision Slider</title>
+    <style>
+        .container {
+            display: flex;
+            width: 500px;
+            height: 250px;
+            position: relative;
+        }
+
+        .left {
+            background: red;
+            height: 50px;
+            width: 25px;
+            position: absolute;
+            left: 45%;
+            top: 40%;
+            cursor:pointer;
+            border: none;
+        }
+
+        .right {
+            background: green;
+            height: 50px;
+            width: 25px;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            cursor:cell;
+            border: none;
+        }
+
+        .first {
+            overflow: hidden;
+            width: 250px;
+        }
+
+        .second {
+            width: 250px;
+            overflow: hidden;
+        }
+
+        img {
+            height:250px;
+            width:500px;
+        }
+
+        p {
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            cursor: e-resize;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="first">
+            <img src="https://www.w3schools.com/howto/img_snow.jpg" alt="">
+        </div>
+        <button class="left"></button>
+        <button class="right"></button>
+        <div class="second">
+            <img src="https://www.w3schools.com/howto/img_forest.jpg" alt="">
+        </div>
+    </div>
+    
+    <script>
+        const container = document.getElementById("container");
+        const left = document.querySelector('.left');
+        const right = document.querySelector('.right');
+        const first = document.querySelector('.first');
+        const second = document.querySelector('.second');
+        let count = 0;
+
+        right.onclick = function(e) {
+            count+=10;
+            
+            if ( count >= 250 ) {
+                count = 250;
+                return
+            }
+
+            first.style.width = `${250+count}px`;
+            second.style.width = `${250-count}px`;
+            e.target.style.transform = `translateX(${count}px)`;
+            left.style.transform = `translateX(${count}px)`;
+            console.log(count)
+        }
+
+        left.onclick = function(e) {
+            count-=10;
+            second.style.width = `${250-count}px`;
+            console.log(count)
+        }
+    </script>
+</body>
+</html>

@@ -1,18 +1,5 @@
-     // const container = document.querySelector('.container');
     
         const data = [ 'The Woods' , "Cinque Terre" , 'Mountains and fjords' , 'Northern Lights' , 'Nature and sunrise' , 'Snowy Mountains' ];
-        // const img_url = [ 'img_woods.jpg' , 'img_5terre_wide.jpg' , 'img_mountains_wide.jpg' , 'img_lights_wide.jpg' , 'img_nature.jpg' , 'img_snow_wide.jpg' ];
-
-        // function classChange(className) {
-        //     return  img_url.map(
-        //                  item => `<img class = ${className} src =  "./assets/${item}">`
-        //             ).join('');
-        // }
-
-        // container.innerHTML = classChange('images');
-
-
-
         let count = 0;
         const images = document.querySelectorAll(".images");
         const next = document.querySelector(".next");
