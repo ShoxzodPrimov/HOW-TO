@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra Striping a table</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="max-w-7xl mx-auto">
+    <table class="w-full">
+        <thead>
+            <tr>
+                <th class="py-2 px-4 text-left">First Name</th>
+                <th class="py-2 px-4 text-left">Last Name</th>
+                <th class="py-2 px-4 text-left">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+
+    <script>
+        const tbody = document.querySelector('tbody');
+
+        console.log(tbody)
+
+        const data = [
+                {
+                    firstName:'Jill',
+                    lastName:'Smith',
+                    points:'50'
+                },
+
+                {
+                    firstName:'Eve',
+                    lastName:'Jackson',
+                    points:'94'
+                },
+
+                {
+                    firstName:'Adam',
+                    lastName:'Johnson',
+                    points:'67'
+                },
+        ];
+
+         const fullData  = data.map(
+                item =>
+                `<tr class='odd:bg-[#f2f2f2]'>
+                    <td class='py-2 px-4 text-left'>${item.firstName}</td>
+                    <td class='py-2 px-4 text-left'>${item.lastName}</td>
+                    <td class='py-2 px-4 text-left'>${item.points}</td>
+                </tr>`
+         ).join('');
+
+         tbody.innerHTML = fullData;
+
+    </script>
+
+</body>
+</html>
