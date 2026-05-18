@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+    <style>
+        .table1 {
+            border: 1px solid silver;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .table2 {
+            border: 1px solid silver;
+            width: 100%;
+        }
+
+        .cells {
+            padding: 8px;
+        }
+
+        .tr:nth-child(even) {
+            background: rgb(226, 224, 224);
+        }
+
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <tr>
+            <td>Cell</td>
+            <td>
+                <table class="table2">
+                    <legend>Nested Table</legend>
+                </table>
+            </td>    
+        </tr>
+    </table>
+
+    <script>
+        const table2 = document.querySelector(".table2");
+
+        table2.innerHTML = [
+            {
+                cell:"Cell 1"
+            },
+
+            {
+                cell:"Cell 2"
+            },
+
+            {
+                cell:"Cell 3"
+            },
+
+            {
+                cell:"Cell 4"
+            },
+        ].map(
+            item => 
+            `
+                <tr class = "tr">
+                    <td class='cells'>${item.cell}</td>
+                </tr>
+            `
+        ).join('');
+
+
+    </script>
+</body>
+</html>
