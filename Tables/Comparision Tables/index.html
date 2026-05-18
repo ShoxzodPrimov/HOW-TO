@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparision Table</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style> 
+        table {
+            border: 1px solid silver;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th , td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        tbody > tr {
+            background: rgb(233, 231, 231);
+        }
+
+       .check , .remove {
+            font-weight: 900;
+            font-size: 1.4rem;
+        }
+
+        .check {
+            color: green;
+        }
+
+        .remove {
+            color: red;
+        }
+
+        .center {
+            transform: translateX(8px);
+            display: inline-block;
+        }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Basic</th>
+                <th>Pro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sample Text</td>
+                <td><i class="center remove bi bi-x"></i></td>
+                <td><i class="check bi bi-check2"></i></td>
+            </tr>
+
+             <tr>
+                <td>Sample Text</td>
+                <td><i class="center check bi bi-check2"></i></td>
+                <td><i class="check bi bi-check2"></i></td>
+            </tr>
+
+
+             <tr>
+                <td>Sample Text</td>
+                <td><i class="center check bi bi-check2"></i></td>
+                <td><i class="check bi bi-check2"></i></td>
+            </tr>
+
+             <tr>
+                <td>Sample Text</td>
+                <td><i class="center remove bi bi-x"></i></td>
+                <td><i class="check bi bi-check2"></i></td>
+            </tr>
+
+             <tr>
+                <td>Sample Text</td>
+                <td><i class="center check bi bi-check2"></i></td>
+                <td><i class="check bi bi-check2"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
