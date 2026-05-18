@@ -1,0 +1,29 @@
+.container__buttons {
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #ccc;
+}
+
+.active {
+  background: #ccc;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 5px;
+}
+.cards__items {
+  padding: 18px;
+  background: #2196F3;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

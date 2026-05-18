@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background: rgb(86, 86, 86);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background: green;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.navbar__item {
+  display: flex;
+  background: #f1f1f1;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid silver;
+  cursor: auto;
+}
+.navbar__name, .navbar__country {
+  width: 50%;
+  font-weight: 900;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+.data__item {
+  display: flex;
+  background: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid silver;
+  cursor: pointer;
+}
+.data__item:hover {
+  background: #f1f1f1;
+}
+.data__name, .data__country {
+  width: 50%;
+  font-weight: 200;
+}/*# sourceMappingURL=index.css.map */

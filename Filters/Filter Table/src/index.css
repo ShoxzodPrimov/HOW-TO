@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: 1px solid rgb(162, 162, 162);
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/960px-Vector_search_icon.svg.png");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 1rem;
+}
+#search::-moz-placeholder {
+  color: rgb(141, 141, 141);
+  font-size: 1rem;
+}
+#search::placeholder {
+  color: rgb(141, 141, 141);
+  font-size: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.navbar__item {
+  display: flex;
+  background: #f1f1f1;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid silver;
+  cursor: auto;
+}
+.navbar__name, .navbar__country {
+  width: 50%;
+  font-weight: 900;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+.data__item {
+  display: flex;
+  background: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid silver;
+  cursor: pointer;
+}
+.data__item:hover {
+  background: #f1f1f1;
+}
+.data__name, .data__country {
+  width: 50%;
+  font-weight: 200;
+}/*# sourceMappingURL=index.css.map */

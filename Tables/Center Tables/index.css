@@ -1,0 +1,9 @@
+table {
+  border-collapse: collapse;
+  display: block;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */

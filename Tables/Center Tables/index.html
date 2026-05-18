@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Tables</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <script>
+
+        const tableBody = document.querySelector('tbody');
+
+        ( async () => {
+            const res = await fetch('./data.json');
+            const data = await res.json();
+
+            const virtualElements = data.map(
+                items => 
+                `
+                <tr>
+                    <td>${items.first_name}</td>
+                    <td>${items.last_name}</td>
+                    <td>${items.age}</td>
+                </tr>
+                `
+            ).join('')
+            tableBody.innerHTML = virtualElements;
+        })()
+
+
+    </script>
+</body>
+</html>
