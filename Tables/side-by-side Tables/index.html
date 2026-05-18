@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side-by-side Tables</title>
+
+<style>
+    table {
+        border: 1px solid silver;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+    .even:nth-child(odd) {
+        background: rgb(230, 230, 230);
+    }
+
+    th , td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    div {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+</style>
+</head>
+<body>
+    <div>
+    <table class="left">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+
+  <table class="right">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody class="tbody2">
+
+        </tbody>
+    </table>
+</div>
+    <script>
+
+        const tableBody = document.querySelector('.tbody');
+        const tableBody2 = document.querySelector('.tbody2');
+
+        ( async () => {
+            const res = await fetch('./data.json');
+            const data = await res.json();
+
+            const virtualElements = data.map(
+                items => 
+                `
+                <tr class='even'>
+                    <td class="data">${items.first_name}</td>
+                    <td class="data">${items.last_name}</td>
+                    <td class="data">${items.age}</td>
+                </tr>
+                `
+            ).join('')
+            tableBody.innerHTML = virtualElements;
+            tableBody2.innerHTML = virtualElements;
+        })()
+    </script>
+</body>
+</html>
