@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Width Table</title>
+    <style> 
+        th , td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</th>
+                <td>Smith</th>
+                <td>50</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const table_body = document.querySelector('tbody');
+
+        fetch('./data.json').then(
+            res => res.json()
+        ).then(
+            data => {
+                const resData = data.map(
+                    item => 
+                    `
+                        <tr>
+                            <td>${item.full_name}</th>
+                            <td>${item.last_name}</th>
+                            <td>${item.age}</th>
+                        </tr>
+                    `
+                ).join('');
+
+                table_body.innerHTML = resData;
+            }
+        )
+    </script>
+</body>
+</html>
