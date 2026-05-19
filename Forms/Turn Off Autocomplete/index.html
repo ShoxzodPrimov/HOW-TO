@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn off autocomplete</title>
+</head>
+<body>
+    <form id="form">
+        <input id="text" type="text" autocomplete="on">
+        <button type="submit">click</button>
+    </form>
+
+    <script>
+        form.onsubmit = e => {
+            e.preventDefault();
+            text.value = null;
+        }
+    </script>
+</body>
+</html>
