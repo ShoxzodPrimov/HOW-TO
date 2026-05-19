@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Input Validation</title>
+</head>
+<body>
+    <form id="form">
+        <input id="name" type="text">
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+        function validation(e) {
+           e.preventDefault();
+           
+           if ( !name.value) {
+            alert('name must be filled out')
+            return
+        }
+
+           form.innerHTML = `
+            <h1>Your input was received as:</h1> 
+            <div style='border:1px solid black; padding: 5px'>
+                <span>fname=</span><span>${name.value}</span>
+            </div>
+           `
+        }
+
+        form.onsubmit = validation;
+    </script>
+</body>
+</html>
