@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Field in Navbar</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+        }
+
+        .list__items {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ccc;
+            max-width: 1200px;
+            margin: auto;
+            padding-right: 5px;
+        }
+
+        .active {
+            background: dodgerblue;
+            color: white;
+        }
+
+        .form {
+            display: flex;
+            align-items: center;
+        }
+
+        #search {
+            padding: 5px 10px;
+            outline: none;
+            border: none;
+        }
+
+        #submitBtn {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+       <ul class="list">
+        <li class="list__items active">Home</li>
+        <li class="list__items">About</li>
+       </ul>
+       <form class="form">
+        <input id="search" type="search" placeholder="Search..">
+        <button id="submitBtn" type="submit">Submit</button>
+        </form> 
+    </nav>
+
+    <script>
+        
+    </script>
+</body>
+</html>
