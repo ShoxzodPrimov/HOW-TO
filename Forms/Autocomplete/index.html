@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete</title>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .submitBtn {
+        background: dodgerblue;
+        border: none;
+        padding: 10px;
+        color: white;
+    }
+
+    #search {
+        outline: none;
+        border: 1px solid silver;
+    }
+</style>
+</head>
+<body>
+    <form id="form">
+        <div class="container">
+            <input id="search" type="search" name="" id="" placeholder="Country" autocomplete="on">
+            <button type="submit" class="submitBtn">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        form.onsubmit = function(e) {
+            e.preventDefault()
+        }
+    </script>
+</body>
+</html>
