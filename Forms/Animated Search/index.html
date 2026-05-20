@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search</title>
+
+    <style>
+        #search {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20181016161702');
+            background-repeat: no-repeat;
+            background-size: 0.9rem;
+            background-position: 5px center;
+            padding: 5px 2px 5px 20px;
+            border: 1px solid silver;
+            border-radius: 3px;
+        }
+
+        .width {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input id="search" type="search">
+<script>
+    const search = document.getElementById('search');
+    search.addEventListener("focus" , e => {
+        e.target.classList.add("width")
+    });
+
+    search.addEventListener("focusout" , e => {
+        e.target.classList.remove("width")
+    });
+</script>
+</body>
+</html>
