@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Text to Clipboard</title>
+</head>
+<body>
+    <input id="text" type="text">
+    <button type="button" id="btn">copy text</button>
+    
+<script>
+    btn.onclick = () => {
+        window.navigator.clipboard.writeText(text.value)
+    }
+</script>
+</body>
+</html>
