@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Caps Lock</title>
+</head>
+<style>
+    .error {
+        color: red;
+        display: block;
+    }
+
+    p {
+        display: none;
+    }
+
+</style>
+<body>
+    <input id="text" type="text" placeholder="Some text">
+    <p>Warning the CapsLock is on</p>
+
+    <script>
+        const paragaph = document.querySelector('p');
+
+        text.onkeydown = (e) => {
+            if (e.getModifierState("CapsLock")) {
+                paragaph.classList.add('error')
+                return
+            }
+                paragaph.classList.remove('error')
+        }
+        
+    </script>
+</body>
+</html>
