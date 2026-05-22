@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Password Visibility</title>
+</head>
+<body>
+    <input type="password" name="" id="password">
+<div style="display: flex; gap: 5px; margin-top: 10px;">
+    <input id="select" type="checkbox">
+    <label for="select">Show Password</label>
+</div>
+    <script>
+        select.onclick = function(e) {
+            const toggle = e.target.checked ? 'text' : 'password';
+            password.type = toggle;
+        }
+    </script>
+</body>
+</html>
