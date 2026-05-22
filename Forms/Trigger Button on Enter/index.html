@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger Button on Enter</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center; gap:5px">
+        <input type="text" placeholder="...some text">
+        <button id="btn">Button</button>
+    </div>
+
+    <script>
+        const button = document.getElementById('btn');
+        
+        function clicked() {
+            window.alert('Hello World');
+        }
+
+        button.addEventListener('click' , clicked);
+
+        button.addEventListener("keydown" , e => {            
+            e.preventDefault();
+            if (e.key == 'Enter') {
+                clicked()
+            }
+        });
+
+
+    </script>
+</body>
+</html>
