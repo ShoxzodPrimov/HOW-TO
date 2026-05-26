@@ -4,23 +4,10 @@
   box-sizing: border-box;
 }
 
-.container {
-  height: 100vh;
-  position: relative;
-}
-
 .closeBtn__right-stick, .closeBtn__left-stick {
   width: 100%;
   border: 2px solid black;
   transition: 0.1s border-color;
-}
-
-.changeBackground {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.visibility {
-  display: flex;
 }
 
 .login {
@@ -34,6 +21,15 @@
 }
 .login:hover {
   background: rgb(11, 181, 11);
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.changeBackground {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
@@ -54,6 +50,14 @@
   align-items: center;
   background: rgb(230, 230, 230);
   padding: 10px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  height: auto;
+  width: 150px;
 }
 
 .form {
@@ -118,12 +122,4 @@ label {
   height: 100%;
   width: 100%;
   display: none;
-}
-
-img {
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-  height: auto;
-  width: 150px;
 }/*# sourceMappingURL=index.css.map */

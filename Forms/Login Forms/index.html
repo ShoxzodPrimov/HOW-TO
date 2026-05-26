@@ -57,17 +57,16 @@
         const closeModal = document.querySelector('.closeBtn');
 
         login.onclick = () => {
-            justified.classList.add('visibility');
+            justified.style.display = 'flex';
             justified.classList.add('changeBackground');
         }
+
         closeModal.onclick = () => {
-            justified.classList.remove('visibility');
-            justified.classList.remove('changeBackground')
+            justified.style.display = 'none';
+            justified.classList.remove('changeBackground');
         };
 
         ahref.onclick = e => e.preventDefault();
-        
-
     </script>
 </body>
 </html>
