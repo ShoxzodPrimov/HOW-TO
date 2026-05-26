@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.closeBtn__right-stick, .closeBtn__left-stick {
+  width: 100%;
+  border: 2px solid black;
+  transition: 0.1s border-color;
+}
+
+.changeBackground {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.visibility {
+  display: flex;
+}
+
+.login {
+  background: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+.login:hover {
+  background: rgb(11, 181, 11);
+}
+
+.modal {
+  background: white;
+  width: 300px;
+}
+.modal__wrapper {
+  padding: 15px 10px 10px;
+}
+.modal__header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 4px;
+}
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(230, 230, 230);
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0;
+}
+.form__top, .form__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.saveDetails {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.cancelBtn {
+  background: red;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.closeBtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-weight: 900;
+  width: 15px;
+  height: 15px;
+}
+.closeBtn:hover .closeBtn__left-stick, .closeBtn:hover .closeBtn__right-stick {
+  border-color: silver;
+}
+.closeBtn__left-stick {
+  transform: rotate(45deg) translateY(1px);
+}
+.closeBtn__right-stick {
+  transform: rotate(-45deg) translateY(-2px) translateX(1px);
+}
+
+.justified {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  height: auto;
+  width: 150px;
+}/*# sourceMappingURL=index.css.map */

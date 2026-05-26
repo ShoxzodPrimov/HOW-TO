@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Forms</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="justified">
+            <div class="modal">  
+                <div class="modal__wrapper">
+                <div class="modal__header">
+                    <button class="closeBtn">
+                        <div class="closeBtn__left-stick"></div>
+                        <div class="closeBtn__right-stick"></div>
+                    </button>
+                </div>
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
+                
+                <form class="form">
+                    <div class="form__top">
+                        <label for="text">Username</label>
+                        <input type="text" id="text" placeholder="Enter UseName">
+                    </div>
+
+                    <div class="form__bottom">
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Enter Password">
+                    </div>
+                </form>
+
+                <div class="saveDetails">
+                    <input type="checkbox" name="" id="" checked>
+                    <span>Remember me</span>
+                </div>
+
+            </div>
+                <div class="modal__footer">
+                    <button class="cancelBtn">cancel</button>
+                    <div>
+                        <span>Forgot</span>
+                        <a href="./index.html">password</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+                <button class="login">Login</button>
+</div>
+
+    <script>
+        const ahref = document.querySelector("a");
+        const login = document.querySelector('.login');
+        const justified = document.querySelector('.justified');
+        const closeModal = document.querySelector('.closeBtn');
+
+        login.onclick = () => {
+            justified.classList.add('visibility');
+            justified.classList.add('changeBackground');
+        }
+        closeModal.onclick = () => {
+            justified.classList.remove('visibility');
+            justified.classList.remove('changeBackground')
+        };
+
+        ahref.onclick = e => e.preventDefault();
+        
+
+    </script>
+</body>
+</html>

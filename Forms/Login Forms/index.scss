@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+%sticks {
+    width: 100%;
+    border: 2px solid black;
+    transition: 0.1s border-color;
+}
+
+.changeBackground {
+    background: rgba($color: #000000, $alpha: 0.5);
+}
+
+.visibility {
+    display: flex;
+}
+
+.login {
+    background: dodgerblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 10px ;
+
+    &:hover {
+        background: rgb(11, 181, 11);
+    }
+}
+
+.modal {
+    background: #ffff;
+    width: 300px;
+
+    &__wrapper {
+        padding: 15px 10px 10px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 4px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(230, 230, 230);
+        padding: 10px;
+    }
+}
+
+// forms
+.form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin: 10px 0;
+
+    &__top , &__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+input {
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.saveDetails {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+// buttons
+.cancelBtn {
+    background: red;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.closeBtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    width: 15px;
+    height: 15px;
+
+    &:hover &__left-stick , &:hover &__right-stick {
+        border-color: silver;
+    }
+
+    &__left-stick {
+        transform: rotate(45deg) translateY(1px);
+        @extend %sticks;
+    }
+
+    &__right-stick {
+        @extend %sticks;  
+        transform: rotate(-45deg) translateY(-2px) translateX(1px);
+    }
+}
+
+
+.justified {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height:100%;
+    width:100%;
+    display: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: auto;
+    width: 150px;
+}
