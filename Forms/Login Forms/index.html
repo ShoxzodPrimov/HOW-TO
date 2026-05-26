@@ -47,7 +47,7 @@
                 </div>
             </div>
     </div>
-                <button class="login">Login</button>
+            <button class="login">Login</button>
 </div>
 
     <script>
@@ -67,6 +67,12 @@
         };
 
         ahref.onclick = e => e.preventDefault();
+
+        justified.onclick = e => {
+            if ( e.target.classList.contains('justified') ) {
+                e.target.style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>
